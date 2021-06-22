@@ -20,7 +20,7 @@ namespace GeneralStoreMVC.Controllers
             // See below (modifying ApplicationDbContext class)
             List<Product> productList = _db.Products.ToList();
             List<Product> orderedList = productList.OrderBy(prod => prod.Name).ToList();
-            return View(_db.Products.ToList());
+            return View(orderedList);
         }
 
         // GET: Product

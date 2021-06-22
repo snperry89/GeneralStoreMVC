@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,12 +184,25 @@
     <Compile Include="Migrations\202106221750376_InitialMigration.Designer.cs">
       <DependentUpon>202106221750376_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106221853192_TransactionsAdded.cs" />
+    <Compile Include="Migrations\202106221853192_TransactionsAdded.Designer.cs">
+      <DependentUpon>202106221853192_TransactionsAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106222028137_TransactionsRemovedDateTime.cs" />
+    <Compile Include="Migrations\202106222028137_TransactionsRemovedDateTime.Designer.cs">
+      <DependentUpon>202106222028137_TransactionsRemovedDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106222035586_TransactionReAddedDate.cs" />
+    <Compile Include="Migrations\202106222035586_TransactionReAddedDate.Designer.cs">
+      <DependentUpon>202106222035586_TransactionReAddedDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -258,6 +272,9 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Transaction\Details.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +298,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106221750376_InitialMigration.resx">
       <DependentUpon>202106221750376_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106221853192_TransactionsAdded.resx">
+      <DependentUpon>202106221853192_TransactionsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106222028137_TransactionsRemovedDateTime.resx">
+      <DependentUpon>202106222028137_TransactionsRemovedDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106222035586_TransactionReAddedDate.resx">
+      <DependentUpon>202106222035586_TransactionReAddedDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
